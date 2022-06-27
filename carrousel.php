@@ -2,9 +2,9 @@
 
 /**
  *Plugin Name: carrousel
- *Description: Un deuxième exemple de plugin utilisant shortcode en utilisant des dossiers pour la structure
+ *Description: Un deuxième exemple de plugin utilisant carrousel en utilisant des dossiers pour la structure
  *Author: Xiaowei Ma
- *Plugin URI: https://github.com/Tracy202201/31w-extension-exer2.git
+ *Plugin URI: https://github.com/Tracy202201/31w-extension-tp1-.git
  */
 
 
