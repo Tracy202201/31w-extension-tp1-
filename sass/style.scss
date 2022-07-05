@@ -1,8 +1,25 @@
+/*mobile*/
 .carrousel {
     position: absolute;
-    width: 50vw;
-    height: 50vh;
-    top: 25vh;
-    left: 25vw;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
     background-color: gainsboro;
+    z-index: 9;
+
+    @media screen and (min-width:700px) {
+        width: 75vw;
+        height: 25vh;
+        top: 25vw;
+        left: 25vh;
+    }
+}
+
+.carrousel__figure {
+    position: absolute;
+}
+
+.carrousel__figure  img {
+    position: absolute;
 }

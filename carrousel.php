@@ -40,7 +40,7 @@ function genere_carrousel()
     //le bouton fermeture
     $contenu .= '<button class="carrousel__fermeture">X</button>';
     //le conteneur d'images
-    $contenu .= '<figure class ="carrousel__img></figure>';
+    $contenu .= '<figure class ="carrousel__figure></figure>';
     //le forlulaire des radio bouton pour naviguer d'une image a l'autre
     $contenu .= '<form class ="carrousel__radio></form>';
     $contenu .= '</div><!--- fin du carrousel---!>';
