@@ -11,4 +11,11 @@
     transform : scale(0);
     transition : all 1s;
     
+    @media screen and (min-width: 700px) {
+        width : 75vw;
+        height : 75vh;
+        top : 25vw;
+        left: 25vh;
+        
+    }
 }
