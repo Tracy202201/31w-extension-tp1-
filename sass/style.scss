@@ -10,7 +10,7 @@
     opacity : 0;
     transform : scale(0);
     transition : all 1s;
-    
+
     @media screen and (min-width: 700px) {
         width : 75vw;
         height : 75vh;
@@ -18,4 +18,9 @@
         left: 25vh;
         
     }
+}
+
+.carrousel__ouvrir {
+    opacity : 1;
+    transform : scale(1);
 }
