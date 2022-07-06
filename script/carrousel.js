@@ -36,5 +36,8 @@ function ajouter_elmRadio(){
     elmCarrousel__figure.children[this.dataset.index].classList.add('carrousel__figure__img--activer')
     })
 }
+elmCarrousel__fermeture.addEventListener('mousedown', function(){
+    elmCarrousel.classList.remove('carrousel__ouvrir') 
+})
 
 })()
