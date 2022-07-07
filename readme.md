@@ -4,7 +4,7 @@
 
 ### Contien 5 commits
 
-> Le theme contient 6 fichiers:
+> L'extension Carrousel contient 6 fichiers:
 
 1. style.scss
 2. carrousel.js
