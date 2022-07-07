@@ -58,4 +58,10 @@
   margin: 10px;
   display: block;
 }
+
+.carrousel__msg {
+  text-align: center;
+  color: aliceblue;
+  transition: opacity 1s, transform 1s;
+}
 /*# sourceMappingURL=style.css.map */

@@ -12,9 +12,14 @@
     let elmGalerieImg = elmGalerie.querySelectorAll("figure figure img")
     //element carrousel
     let elmCarrousel = document.querySelector('.carrousel')
+
+    let elmCarrousel__msg = document.querySelector('.carrousel__msg')
+
     //ensemble des images carrousel 
     let elmCarrousel__figure = document.querySelector('.carrousel__figure')
+    
     let elmCarrousel__fermeture = document.querySelector('.carrousel__fermeture')
+   
     //ensemble des radio buttons 
     let elmCarrousel__radio = document.querySelector('.carrousel__radio')
      
@@ -24,14 +29,21 @@
 
     let ancien_index = -1
 
+    let compteur =0 
 
     //parcourir tous les images de galerie 
     for (const img of elmGalerieImg){
+        //ajouter compteur pour que image peux afficher par chiquer 
+        img.dataset.index = compteur++
         ajouter_elmImg(img)//ajouter element img de galarie (img provient de la galarie)
+        ajouter_elmMsg()
         ajouter_elmRadio() //ajouter radio button 
         //des on clique sur galarie, on ajouter des transformation, opacite de carrousel(chaque image va ecouter) 
         img.addEventListener('mousedown', function(){
         elmCarrousel.classList.add('carrousel__ouvrir') 
+        index = this.dataset.index
+        affiche_carrousel_img()
+        
     }) 
     }
 //////////////////////////////////////////////////////////  ajouter_elmimg
@@ -43,6 +55,12 @@
         elmImg.dataset.index = index
     }
 
+    function ajouter_elmMsg(){
+        let elmMsg = document.createElement('msg')
+        elmMsg.classList.add('carrousel__msg_Titre')
+        elmCarrousel__msg.appendChild(elmMsg)
+    }
+
     function ajouter_elmRadio(){
         let elmRadio = document.createElement('input')
         elmRadio.setAttribute('type','radio')
@@ -52,16 +70,8 @@
         elmCarrousel__radio.appendChild(elmRadio)
         //ecouteur pour selectionner une nouvelle image 
         elmRadio.addEventListener('mousedown', function(){
-            if(ancien_index != -1){
-                //desactiver image precedent 
-                elmCarrousel__figure.children[ancien_index].classList.remove('carrousel__figure__img--activer')
-            }
-            
-                                        //this = element suivre un element elmRadio
-            elmCarrousel__figure.children[this.dataset.index].classList.add('carrousel__figure__img--activer') //standard langue
-            //sauvergarder des ancien image 
-            ancien_index = this.dataset.index
-            
+            index = this.dataset.index
+            affiche_carrousel_img()   
         })
     }
     /**
@@ -70,4 +80,19 @@
     elmCarrousel__fermeture.addEventListener('mousedown', function(){
         elmCarrousel.classList.remove('carrousel__ouvrir') 
     })
+
+
+    function affiche_carrousel_img()
+    {
+
+        if(ancien_index != -1){
+            //desactiver image precedent 
+            elmCarrousel__figure.children[ancien_index].classList.remove('carrousel__figure__img--activer')
+        }
+        elmCarrousel__figure.children[index].classList.add('carrousel__figure__img--activer') //standard langue
+        //sauvergarder des ancien image 
+        ancien_index = index
+    }
+
+
 })()

@@ -37,6 +37,9 @@ function genere_carrousel()
     $contenu = '<div class="carrousel">';
     // Le bouton fermeture
     $contenu .= '<button class="carrousel__fermeture">X</button>';
+    // Le conteneur de message
+    $contenu .= '<H1 class="carrousel__msg">College Maisonneuve</h1>';
+    // Le formulaire des radio bouton pour naviguer d'une image à l'autre
     // Le conteneur d'images
     $contenu .= '<figure class="carrousel__figure"></figure>';
     // Le formulaire des radio bouton pour naviguer d'une image à l'autre
