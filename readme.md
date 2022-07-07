@@ -2,7 +2,7 @@
 
 ## Extension Carrousel pour Wordpress
 
-### Contien 5 commits
+### Contien 20 commits
 
 > L'extension Carrousel contient 6 fichiers:
 
