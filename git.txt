@@ -1,0 +1,24 @@
+1. git init 
+apres init on vas voir un .git dans E:\xampp\htdocs\31w\wp-content\themes\31w-xm avec affichage element masque 
+
+si on a cree un repo dans le faux place, on pourrait supprimer .git directment 
+
+2. git add --all
+3. git status 
+4. git commit -m "commentaires"
+5. git log (pour voir les histoire de commit)
+6. git remore add origin https://github.com/Tracy202201/31w-xm.git
+7. git remote -v
+8. git push -u origin main  (apres /e/xampp/htdocs/31w/wp-content/themes/31w-xm (main) )
+9. git push --set-upstream origin exercice1 (/e/xampp/htdocs/31w/wp-content/themes/31w-xm (exercice1))
+
+Note: 
+git log --oneline (permet de voir tous les commit)
+markdown: https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax 
+
+creer un nouveau depo 31w-cours (pull les dossiers de prof) dans cle usb
+1.git init
+2.git remote -v 
+3.git remote add 31w (alias) + url https://github.com/eddytuto/theme-31w.git
+4.git remote -v 
+5.git pull 31w exer1

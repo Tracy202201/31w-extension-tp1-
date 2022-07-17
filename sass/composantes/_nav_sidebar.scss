@@ -1,0 +1,28 @@
+
+.menu__sidebar__ul{
+    list-style: none;
+    margin: 0;
+    padding: .5rem,0;
+    
+}
+
+.menu__sidebar__ul .menu-item a{ 
+    // lien a
+    display: block;
+    padding: 10px;
+    border-top: 1px solid #999;
+    margin: 2px 0;
+    text-decoration: none;
+    border-radius: 2px;
+    line-height: 1em;
+    border-color: #dcdcdc;
+    //background: #182029;
+    color: #f7f7f7;
+    transition: all .2s ease;
+}
+
+
+.menu__sidebar__ul .menu-item a:hover{ // lien a
+    background-color: #C5C3C6;
+    color: #b4784c;
+}

@@ -1,0 +1,69 @@
+.site {                 /* class body base mobile*/
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-areas:
+		"header header"
+		"sidebar sidebar"
+		"main main"
+		"footer footer";
+
+}
+
+
+
+.site__header, .site__sitebar, .site__main, .site__footer {
+	padding: 1vh 3vw; /*vh top botton, vw left right*/
+}
+
+/*verify selector dans header.php*/
+.site__header {
+	grid-area: header;
+	padding: 1em;
+	background-color: whitesmoke;
+	
+}
+
+.site__main {
+	grid-area: main;
+	overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+	background-color: lighten($color__background-zonegrid, 90%);
+}
+
+.site__main2 {
+	width: 100%;
+	grid-area: unset;
+	background-color: darkgrey;
+	padding-bottom: 60px;
+	overflow: hidden;
+	/* Resolves issue with <pre> elements forcing full width. */
+	text-align: center;
+}
+
+.site__sidebar { /* sidebar dans header */
+	grid-area: sidebar;
+	padding: 20px;
+	background-color:lighten($color__background-zonegrid, 40%);
+}
+.site__footer {
+	grid-area: footer;
+	background-color: #111;
+	color: #fff;
+	text-align: right;
+}
+
+.site__footer a {
+	color: #999;
+	text-decoration: none;
+}
+
+/*@import "no-sidebar";*/
+
+@media screen and (min-width:700px) {
+	.site{
+	grid-template-columns: ($size__site-sidebar) auto;
+	grid-template-areas:
+		"header header"
+		"sidebar main"
+		"footer footer";
+	}
+}

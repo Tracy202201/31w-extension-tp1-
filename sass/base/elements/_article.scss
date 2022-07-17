@@ -1,0 +1,50 @@
+/* style du content des article */
+
+.article_section {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+  
+  
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .article_cours {
+    position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px 30px;
+    max-width: 50ch;
+    min-height: 400px;
+  }
+  
+  .article_cours:first-child {
+    display: none;
+  }
+
+  .article_cours>*::before {
+    content: "";
+    width: 100%;
+    height: 350px;
+    left: 10px;
+    top: -70px;
+    position: absolute;
+    animation: animate 60s linear infinite;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  
+  

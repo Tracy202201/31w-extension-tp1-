@@ -1,0 +1,41 @@
+/**
+*
+* styles pour h1,h2,h3,h4,h5,h6 et p
+*/
+
+h1,h2 {
+    font-family: lighten($color__h, 40%);
+}
+
+h2,h3,h4,h5,h6,p {
+    font-family: lighten($color__h, 10%);
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 5rem); // CSS min() and CSS max() combined
+    font-family: 'Anek Latin', sans-serif;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 3vw, 3rem); // CSS min() and CSS max() combined
+}
+
+h3 {
+    font-size: clamp(1.3rem, 2.5vw, 2.5rem); // CSS min() and CSS max() combined
+}
+
+h4 {
+    font-size: clamp(1.2rem, 2vw, 2rem); // CSS min() and CSS max() combined
+}
+
+h5 {
+    font-size: clamp(1rem, 1.5vw, 1.5rem); // CSS min() and CSS max() combined
+}
+
+h6 {
+    font-size: clamp(1rem, 1.5vw, 1.5rem); // CSS min() and CSS max() combined
+}
+
+p {
+    font-size: clamp(0.8rem, 1vw, 1rem); // CSS min() and CSS max() combined
+}

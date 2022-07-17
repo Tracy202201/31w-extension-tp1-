@@ -1,0 +1,74 @@
+/*! 
+Theme Name: 31W-exercice-1 
+Author: Xiaowei MA
+Author URI: https://github.com/Tracy202201/31w-xm
+Description: Thème de base pour le cours de 31W
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.4
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: 31-w
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Variable
+	-couleur
+	-police
+	-dimension
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layout
+# Composent
+	- Navigation
+	- Posts and pages
+	- Widgets
+	- Media
+	- Galleries
+# plugin
+
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+/* variable
+--------------------------------------------- */
+@import "variable/typography";
+@import "variable/dimension";
+@import "variable/colors";
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+@import "generic/normalize";
+
+/* Box sizing
+--------------------------------------------- */
+@import "generic/box-sizing";
+
+/* Composante Navigation
+--------------------------------------------- */
+@import "composantes/nav_sidebar"; //navigation sidebar
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "base/base";
+
+/*--------------------------------------------------------------
+# Layout ajouter un ficher _sidebar-content
+--------------------------------------------------------------*/
+@import "layout/sidebar-content";
